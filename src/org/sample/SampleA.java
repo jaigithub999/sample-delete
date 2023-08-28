@@ -22,6 +22,7 @@ public class SampleA {
 		logBtn.click();
 		WebElement errorMsg = driver.findElement(By.xpath("//div[contains(text(),'The email address or mobile number you entered')]"));
 		String credentialType = "negative";
+		System.out.println("hello");
 		if (credentialType.equals("positive")) {
 			//user entered in home page
 			WebElement WelcomMsg=driver.findElement(By.xpath("//span[text()='welcome']"));
